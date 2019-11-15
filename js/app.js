@@ -1,6 +1,13 @@
 
+
+miUrl = window.location.href;
+miSW = "/twittor/sw.js";
+
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+    if (miUrl.includes('localhost')) {
+        miSW = "/sw.js"
+    }
+    navigator.serviceWorker.register(miSW);
 }
 
 

@@ -9,7 +9,7 @@ self.addEventListener('install', event => {
     
     const miCacheStatico = caches.open(CACHE_STATIC).then(miCache =>{
             return miCache.addAll([
-                '/',
+                //'/',
                 'index.html',
                 'css/style.css',
                 'img/favicon.ico',
