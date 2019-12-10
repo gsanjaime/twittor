@@ -43,6 +43,9 @@ self.addEventListener('activate', event => {
             if (miCacheName !== CACHE_STATIC && miCacheName.includes('static')) {
                 return caches.delete(miCacheName);
             }
+            if (miCacheName !== CACHE_DYNAMIC && miCacheName.includes('dynamic')) {
+                return caches.delete(miCacheName);
+            }
         });
 
     });

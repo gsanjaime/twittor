@@ -1,5 +1,4 @@
 
-
 miUrl = window.location.href;
 miSW = "/twittor/sw.js";
 
